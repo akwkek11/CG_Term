@@ -8,7 +8,7 @@
 
 * Target Version : Android 6.0 MarshMellow API 23
 * Least Version : Android 4.3 JellyBean API 18
-* Language : C / C++ with NDK ( in Qt ) + Java
+* Language : C / C++ with NDK ( in Qt ) + Java or Unity
 * ( We are coding vertex shader mainly inserting many of arithmetic operations. )
 
 ## 2. Introduction of Theme for the Term Project

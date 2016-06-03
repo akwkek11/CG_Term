@@ -16,13 +16,11 @@ public class ScreenRay : MonoBehaviour
 
             RaycastHit hitInfo;
 
-            if (Physics.Raycast(ray, out hitInfo, 100f))
+            if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity))
             {
                 Debug.Log("hit point : " + hitInfo.point);
 
-                int l = hitInfo.transform.gameObject.layer;
-
-                if (l == clickLayer)
+                if (hitInfo.transform.tag.Equals("ImposObj"))
                 {
                     Debug.Log(" hit object : " + hitInfo.collider.name);
                 }

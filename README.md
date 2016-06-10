@@ -8,8 +8,7 @@
 
 * Target Version : Android 6.0 MarshMellow API 23
 * Least Version : Android 4.3 JellyBean API 18
-* Language : C / C++ with NDK ( in Qt ) + Java or Unity
-* ( We are coding vertex shader mainly inserting many of arithmetic operations. )
+* Language : Unity Script! ( C# )
 
 ## 2. Introduction of Theme for the Term Project
 
@@ -31,3 +30,5 @@
 * Impossible object(경사로) 만들기, 허공 밑으로 공이 너무 멀리 떨어져 있을 때 제거 – 김기찬
 * 현재 시선이 착시를 일으키는 위치에 있는지 확인 – 주어진
 * 공이 꾸준히 가속도를 받으며 내려가는 모습 구현 – 반용휴
+
+* 일단 fundemental한 부분은 다같이 협업으로 해결하고 있습니다.

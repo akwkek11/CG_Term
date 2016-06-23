@@ -23,5 +23,9 @@ public class MyGUI : MonoBehaviour
         {
             this.MyCameraMover.StartCoroutine(this.MyCameraMover.MoveToPosition(4, 1f));
         }
+        if (GUILayout.Button("Impossible Example"))
+        {
+            this.MyCameraMover.StartCoroutine(this.MyCameraMover.MoveToPosition(5, 1f));
+        }
     }
 }

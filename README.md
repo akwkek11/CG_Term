@@ -21,14 +21,10 @@
 < Figure 1. Mobile Game using impossible objects >
 
  저희는 실제로 불가능한 물체들을 Rendering할 것입니다. 물론 Object는 하나가 아닌 여러 경우에서의 ‘Objects’를 의미합니다. 
- Impossible Object의 착시가 일어날 때 무한히 빨라지는 공을 만들 예정입니다. 즉, Camera와 공에 적당한 트릭을 이용할 것입니다.
-
-착시 상태일 때 공이 계속 내려가 빨라지는 모습, 착시 상태가 아닐 땐 공이 길에서 벗어나는 모습을 볼 수 있습니다.
+ Impossible Object들의 예시 Model들을 나열해놓고 어떤 각도에서 착시가 발생하는지 확인할 수 있습니다.
 
 ## 3. 역할
 
-* Impossible object(경사로) 만들기, 허공 밑으로 공이 너무 멀리 떨어져 있을 때 제거 – 김기찬
-* 현재 시선이 착시를 일으키는 위치에 있는지 확인 – 주어진
-* 공이 꾸준히 가속도를 받으며 내려가는 모습 구현 – 반용휴
-
-* 일단 fundemental한 부분은 다같이 협업으로 해결하고 있습니다.
+* Coding – 김기찬
+* Modeling impossible object, manage camera position – 주어진
+* Put model in the scene, testing – 반용휴

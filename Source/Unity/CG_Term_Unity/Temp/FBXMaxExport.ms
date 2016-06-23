@@ -26,18 +26,18 @@ fn DialogCallback =
 pluginManager.loadClass FBXIMP;
 pluginManager.loadClass FBXEXP;
 
-openLog "E:/Android/OPENGL~1/CG_Term/Source/Unity/CG_TER~1/Temp/3dsMax.log" mode:"w"
+openLog "C:/Project/GitHub/CG_Term/Source/Unity/CG_TER~1/Temp/3dsMax.log" mode:"w"
 print "Start of log file."; flushLog();
 while true do
 (	
-	if ( fileExists "E:/Android/OPENGL~1/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe" ) then
+	if ( fileExists "C:/Project/GitHub/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe" ) then
 	(
 		exportNormals = false;
 		exportTangents = false;
 		bakeAnimations = false;
 		useFileUnits = false;
 	
-		waitpipe = (openFile "E:/Android/OPENGL~1/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe" mode:"r");
+		waitpipe = (openFile "C:/Project/GitHub/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe" mode:"r");
 		filename = (readLine waitpipe);
 		
 		for i = 0 to 3 do
@@ -143,7 +143,7 @@ while true do
 					print "Before fbx export"; flushLog();
 					try
 					(
-						exportFile "E:/Android/OPENGL~1/CG_Term/Source/Unity/CG_TER~1/Temp/MaxExportedFBXFile.fbx" #noprompt;
+						exportFile "C:/Project/GitHub/CG_Term/Source/Unity/CG_TER~1/Temp/MaxExportedFBXFile.fbx" #noprompt;
 					)
 					catch
 					(
@@ -152,7 +152,7 @@ while true do
 					print "After fbx export"; flushLog();
 				)
 
-				deleteFile "E:/Android/OPENGL~1/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe";
+				deleteFile "C:/Project/GitHub/CG_Term/Source/Unity/CG_TER~1/Temp/MaxCommandPipe";
 				print "Finished max loading and fbx conversion"; flushLog();
 			) -- with defaultAction
 		)
